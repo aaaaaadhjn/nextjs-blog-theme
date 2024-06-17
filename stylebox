@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleBox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 2em;
+            margin: 1em auto;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .planos {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2em;
+        }
+        .plano {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1em;
+            text-align: center;
+            width: 30%;
+        }
+        .plano h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StyleBox</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#como-funciona">Como Funciona</a></li>
+                <li><a href="#questionario">Questionário</a></li>
+                <li><a href="#planos">Planos de Assinatura</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo ao StyleBox</h2>
+        <p>Receba joias exclusivas selecionadas pela nossa equipe diretamente na sua casa.</p>
+    </section>
+
+    <section id="como-funciona">
+        <h2>Como Funciona</h2>
+        <p>1. Responda ao nosso questionário sobre suas preferências de estilo.</p>
+        <p>2. Escolha um dos nossos pacotes de assinatura.</p>
+        <p>3. Receba joias exclusivas selecionadas pela nossa equipe diretamente na sua casa.</p>
+    </section>
+
+    <section id="questionario">
+        <h2>Questionário de Estilo</h2>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="estilo">Qual seu estilo favorito?</label><br>
+            <select id="estilo" name="estilo">
+                <option value="classico">Clássico</option>
+                <option value="moderno">Moderno</option>
+                <option value="vintage">Vintage</option>
+                <option value="boho">Boho</option>
+            </select><br><br>
+            <label for="joias">Quais tipos de joias você prefere? (selecionar tudo que se aplica)</label><br>
+            <input type="checkbox" id="anel" name="joias" value="anel">
+            <label for="anel">Anéis</label><br>
+            <input type="checkbox" id="colares" name="joias" value="colares">
+            <label for="colares">Colares</label><br>
+            <input type="checkbox" id="brincos" name="joias" value="brincos">
+            <label for="brincos">Brincos</label><br>
+            <input type="checkbox" id="pulseiras" name="joias" value="pulseiras">
+            <label for="pulseiras">Pulseiras</label><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="planos">
+        <h2>Planos de Assinatura</h2>
+        <div class="planos">
+            <div class="plano">
+                <h3>Pacote Básico</h3>
+                <p>Receba 1 joia por mês.</p>
+                <p><strong>R$ 49,90/mês</strong></p>
+            </div>
+            <div class="plano">
+                <h3>Pacote Clássico</h3>
+                <p>Receba 3 joias por mês.</p>
+                <p><strong>R$ 129,90/mês</strong></p>
+            </div>
+            <div class="plano">
+                <h3>Pacote Ouro</h3>
+                <p>Receba 5 joias por mês.</p>
+                <p><strong>R$ 199,90/mês</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma equipe apaixonada por joias e moda, dedicada a trazer as melhores peças diretamente para você.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 StyleBox. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
